@@ -1,0 +1,13 @@
+ Hello, pilots!<br>
+<div></div><br>
+
+ 	<div>
+        Name: <%= @plane.name %> <br>
+        Type: <%= @plane.design %> <br>
+        Description: <%= @plane.description %>
+        <%= button_to "Delete", @plane_id, method: :delete %>
+    </div>
+
+    <span><a href="/"><button>Back to planes</button></a></span><br>
+    
+ 

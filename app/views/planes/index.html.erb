@@ -1,0 +1,15 @@
+Hello, pilots!<br>
+<div></div><br>
+<div><a href="planes/new"><button>New plane</button></a></div><br>
+<% @planes.each do |plane| %>
+	
+    <div>
+        Name: <%= plane.name %> <br>
+        Type: <%= plane.design %> <br>
+        Description: <%= plane.description %>
+    </div>
+    <span><a href="planes/<%= plane.id %>/edit"><button>edit</button></a></span><br>
+    <div></div><br>
+
+
+<% end %>
